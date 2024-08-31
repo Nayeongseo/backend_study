@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        #txt_welcome {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .card{
+            text-align: center;
+        }
+        .card_title{
+            font-size: 20px;
+        }
+        .card_button{
+            font-size: 18px;
+            width: 100px;
+            height: 35px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+        }
+        .card_img {
+            width: 300px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cat Pet Market</h1>
+    <div id="txt_welcome">
+        Welcome to Online Cat Pet market! <br>
+        Enjoy your adoption to the fullest!
+        <br>
+        <br>
+        <a href="./adoptionlist.html">adoption list</a>
+    </div>
+    <div class = "grid-container">
+        <div class="card">
+            <img class="card_img" src="./img/BagCat.jpeg">
+            <p class="card_title">Bag Cat</p>
+            <input class="card_button" type="button" value="adoption" onclick="location.href='/adoption?catId=1'">
+        </div>
+        <div class="card">
+            <img class="card_img" src="./img/HulaHoopCat.jpeg">
+            <p class="card_title">Hulahoop Cat</p>
+            <input class="card_button" type="button" value="adoption" onclick="location.href='/adoption?catId=2'">
+        </div>
+        <div class="card">
+            <img class="card_img" src="./img/PhoneCat.jpeg">
+            <p class="card_title">Phone Cat</p>
+            <input class="card_button" type="button" value="adoption" onclick="location.href='/adoption?catId=3'">
+        </div>
+    </div>
+</body>
+</html>
